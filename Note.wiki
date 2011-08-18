@@ -1,0 +1,4 @@
+删除.svn目录
+{{{
+find . -type d -name ".svn"|xargs rm -rf
+}}}
