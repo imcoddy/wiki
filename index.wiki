@@ -1,0 +1,6 @@
+= My Knowledge Base = 
+*  [[Linux]]
+*  [[Software]]
+*  [[Programming]]
+*  [[Note]]
+
