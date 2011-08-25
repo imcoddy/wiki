@@ -1,8 +1,6 @@
 =Git= 
 ==Config==
-#基本信息
-{{{ this is a line of code }}}
 ==Usage==
-==Resource==
+==Resources==
 * [http://progit.org/book/zh/ Pro Git]
 * [http://www.linuxgem.org/user_files/linuxgem/Image/git-tutor.pdf Git tutor ]
