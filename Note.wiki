@@ -7,4 +7,4 @@ Ubuntu查看中文PDF乱码解决
 {{{
 sudo apt-get install xpdf
 }}}
-        
+
