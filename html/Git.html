@@ -9,6 +9,40 @@
 
 <h1 id="toc_1">Git</h1>
 <h2 id="toc_1.1">Config</h2>
+<p>
+配置
+</p>
+<pre>
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.cm commit -a -m
+git config --global alias.df diff
+git config --global alias.dt difftool
+git config --global alias.st status
+git config --global alias.unstage 'reset HEAD --'
+git config --global alias.last 'log -1 HEAD'
+</pre>
+<p>
+.gitconfig
+</p>
+<pre>
+[core]
+	editor = vim
+	excludesfile = /home/imcoddy/.gitignore
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+    cm = commit -a -m
+    df = diff
+    dt = difftool
+[merge]
+	tool = vimdiff
+[diff]
+	tool = vimdiff
+</pre>
 <h2 id="toc_1.2">Usage</h2>
 <h2 id="toc_1.3">Resources</h2>
 <ul>

@@ -13,6 +13,11 @@ _text_
 
 'code line'
 
+`code line 1
+code line 2
+code line 3`
+
+
 {{{
 long code block
 }}}

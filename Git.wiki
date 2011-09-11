@@ -1,5 +1,35 @@
 =Git= 
 ==Config==
+配置
+{{{
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.cm commit -a -m
+git config --global alias.df diff
+git config --global alias.dt difftool
+git config --global alias.st status
+git config --global alias.unstage 'reset HEAD --'
+git config --global alias.last 'log -1 HEAD'
+}}}
+.gitconfig
+{{{
+[core]
+	editor = vim
+	excludesfile = /home/imcoddy/.gitignore
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+    cm = commit -a -m
+    df = diff
+    dt = difftool
+[merge]
+	tool = vimdiff
+[diff]
+	tool = vimdiff
+}}}
 ==Usage==
 ==Resources==
 * [http://progit.org/book/zh/ Pro Git]

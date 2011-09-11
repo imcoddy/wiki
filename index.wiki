@@ -1,8 +1,9 @@
 = My Knowledge Base = 
-*  [[Linux]]
 *  [[Software]]
+*  [[Linux]]
 *  [[Programming]]
 *  [[Note]]
 *  [[TODO]]
 *  [[Vimwiki]]
+*  [[Reading]]
 *
