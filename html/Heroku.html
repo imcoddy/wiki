@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Heroku</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<h1 id="toc_1">Heroku Guide</h1>
+<h2 id="toc_1.1">Deploy</h2>
+<p>
+Write the app, and don't forget to change the listening port using the following code
+</p>
+<pre>
+  var port = process.env.PORT || 3000;
+  app.listen(port, function() {
+      console.log("Listening on " + port);
+  });
+</pre>
+
+<p>
+Declare Dependencies With NPM, need to add global modules like express
+</p>
+
+<p>
+Ignore the node_module folder in git
+</p>
+
+<p>
+Create a file name <code>Profile</code> with following content:
+</p>
+<pre>
+  web: node app.js
+</pre>
+
+<p>
+Create app 
+</p>
+<pre>
+  heroku create --stack cedar
+  git push heroku master
+</pre>
+
+
+<h2 id="toc_1.2">App Rename</h2>
+<p>
+After rename the app, the git remote need to change accordingly
+</p>
+<pre>
+heroku rename newname
+</pre>
+<p>
+Or change it from the web and update the git remote
+</p>
+<pre>
+git remote rm heroku
+git remote add heroku git@heroku.com:newname.git
+</pre>
+
+<h2 id="toc_1.3">Logs</h2>
+<pre>
+  heroku logs 
+</pre>
+
+</body>
+</html>
