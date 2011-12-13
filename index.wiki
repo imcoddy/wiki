@@ -4,6 +4,8 @@
 *  [[Programming]]
 *  [[Note]]
 *  [[TODO]]
+*  [[Device]]
 *  [[Vimwiki]]
 *  [[Reading]]
+*  [[Post]]
 *
