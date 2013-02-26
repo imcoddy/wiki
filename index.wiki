@@ -1,5 +1,9 @@
-[[Linux]]
-[[Git]]
-[[Vim]]
-[[Mac]]
+= My Knowledge Base =
+*  [[Linux]]
+*  [[Software]]
+*  [[Programming]]
+*  [[Note]]
+*  [[Git]]
+*  [[Vim]]
+*  [[Mac]]
 

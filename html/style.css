@@ -77,3 +77,16 @@ code {
     border: 1px solid #ccc;
     background-color: #f9f9f9;
 }
+/* classes for items of todo lists */
+.done0:before {content: "\2592\2592\2592\2592"; color: SkyBlue;}
+.done1:before {content: "\2588\2592\2592\2592"; color: SkyBlue;}
+.done2:before {content: "\2588\2588\2592\2592"; color: SkyBlue;}
+.done3:before {content: "\2588\2588\2588\2592"; color: SkyBlue;}
+.done4:before {content: "\2588\2588\2588\2588"; color: SkyBlue;}
+/* comment the next four or five lines out   *
+ * if you do not want color-coded todo lists */
+.done0 {color: #c00000;}
+.done1 {color: #c08000;}
+.done2 {color: #80a000;}
+.done3 {color: #00c000;}
+.done4 {color: #7f7f7f; text-decoration: line-through;}
