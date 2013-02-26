@@ -1,3 +1,4 @@
+[[VimPlugins]]
 Open multiple files in tab
 vim -p file1 file2 file3
 
@@ -15,4 +16,3 @@ map <C-S-R> :FufFileRecursive<CR>
 
 这样，在vim中，按下Ctrl+Shift+R，就可以快速查找文件了。
 
-[[VimPlugins]]
