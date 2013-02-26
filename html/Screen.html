@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Screen</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<p>
+Screen 常用命令,
+</p>
+
+<p>
+Ctrl-a S 新建水平分割窗口
+Ctrl-a Tab 切换窗口
+Ctrl-a :screen bash 新建 screen 终端，并运行 bash
+Ctrl-a :quit 退出 screen，将关闭所有 screen 终端，结束其中所有任务
+</p>
+
+
+
+
+<p>
+Ctrl-a c 新建 bash screen 终端
+Ctrl-a " 列出
+Ctrl-a A 重命名
+Ctrl-a n 在当前窗口中切换到下一个 screen 终端
+Ctrl-a p 在当前窗口中切换到上一个 screen 终端   
+</p>
+
+<p>
+Ctrl-a d 断开所有 screen 终端，返回 screen 执行前状态，但 screen 内所有终端的任务都在执行
+screen -ls 列出当前用户的所有 screen 实例，包括联接和断开的
+screen -R &lt;pid&gt; 重新联接到已断开的 screen 实例，如果有多个已断开的 screen 实例，则用 &lt;pid&gt; 区分
+</p>
+
+<p>
+Ctrl-a S 新建水平分割窗口
+Ctrl-a Tab 切换窗口
+Ctrl-a X 关闭当前窗口
+Ctrl-a + 扩大当前窗口，默认增加3行
+Ctrl-a - 缩小当前窗口，默认减小3行
+</p>
+
+<p>
+Ctrl-a :screen &lt;command&gt;    新建 screen 终端，并运行命令&lt;command&gt;
+Ctrl-a :resize &lt;height&gt; 改变当前窗口高度为&lt;height&gt;
+Ctrl-a :quit 退出 screen，将关闭所有 screen 终端，结束其中所有任务
+</p>
+
+<p>
+Ctrl-a &lt;Esc&gt;     进入选择模式
+&lt;PageUp&gt; 或 Ctrl-u 光标上移一页
+&lt;PageDown&gt; 或 Ctrl-d    光标下移一页    
+&lt;Left&gt; 或 h  光标左移一格
+&lt;Down&gt; 或 j 光标下移一行
+&lt;Up&gt; 或 k 光标上移一行
+&lt;Right&gt; 或 l     光标右移一格
+&lt;Space&gt; 选择开始，选择结束
+&lt;Esc&gt; 退出选择模式
+</p>
+
+<p>
+Ctrl-a ] 粘贴选择的内容
+</p>
+
+</body>
+</html>

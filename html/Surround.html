@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Surround</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<p>
+Surround.vim is all about "surroundings": parentheses, brackets, quotes, XML tags, and more.  The plugin provides mappings to easily delete, change and add such surroundings in pairs.  While it works under Vim 6, much of the functionality requires Vim 7. 
+</p>
+
+<p>
+Examples follow.  It is difficult to provide good examples in the variable width font of this site; check the documentation for more. 
+</p>
+
+<p>
+Press cs"' (that's c, s, double quote, single quote) inside 
+</p>
+
+<p>
+"Hello world!" 
+</p>
+
+<p>
+to change it to 
+</p>
+
+<p>
+'Hello world!' 
+</p>
+
+<p>
+Now press cs' to change it to 
+</p>
+
+<p>
+Hello world! 
+</p>
+
+<p>
+To go full circle, press cst" to get 
+</p>
+
+<p>
+"Hello world!" 
+</p>
+
+<p>
+To remove the delimiters entirely, press ds" . 
+</p>
+
+<p>
+Hello world! 
+</p>
+
+<p>
+Now with the cursor on "Hello", press ysiw] (iw is a text object). 
+</p>
+
+<p>
+[Hello] world! 
+</p>
+
+<p>
+Let's make that braces and add some space (use "}" instead of "{" for no space): cs]{ 
+</p>
+
+<p>
+{ Hello } world! 
+</p>
+
+<p>
+Now wrap the entire line in parentheses with yssb or yss) . 
+</p>
+
+<p>
+({ Hello } world!) 
+</p>
+
+<p>
+Revert to the original text: ds{ds) 
+</p>
+
+<p>
+Hello world! 
+</p>
+
+<p>
+Emphasize hello: ysiw 
+</p>
+
+<p>
+Hello world! 
+</p>
+
+<p>
+Finally, let's try out visual mode. Press a capital V (for linewise visual mode) 
+followed by S. 
+</p>
+
+
+<p>
+  Hello world! 
+</p>
+
+
+<p>
+This plugin is very powerful for HTML and XML editing, a niche which currently seems underfilled in Vim land.  (As opposed to HTML/XML <strong>inserting</strong>, for which many plugins are available).  Adding, changing, and removing pairs of tags simultaneously is a breeze. 
+</p>
+
+<p>
+The "." command will work with ds, cs, and yss if you install repeat.vim, vimscript #2136. 
+</p>
+
+</body>
+</html>

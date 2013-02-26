@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Vim</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<p>
+<a href="VimPlugins.html">VimPlugins</a>
+Open multiple files in tab
+vim -p file1 file2 file3
+</p>
+
+<p>
+vim ./* opens files in the folder except in another directory
+</p>
+
+<p>
+FuzzyFinder
+打开vim/vim72/autoload/fuf/file.vim，找到function fuf#file#onInit()，增加一行：
+</p>
+
+<p>
+call fuf#defineLaunchCommand(‘FufFileRecursive’, s:MODE_NAME, ‘”**/”‘)
+</p>
+
+<p>
+然后定义快捷键，在_vimrc中增加：
+</p>
+
+<p>
+” FuzzyFinder – Ctrl + Shift + R
+map &lt;C-S-R&gt; :FufFileRecursive&lt;CR&gt;
+</p>
+
+<p>
+这样，在vim中，按下Ctrl+Shift+R，就可以快速查找文件了。
+</p>
+
+</body>
+</html>
