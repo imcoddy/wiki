@@ -1,0 +1,367 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>ZenCoding</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<p>
+Tutorial of zencoding.vim
+</p>
+<blockquote>
+mattn &lt;mattn.jp@gmail.com&gt;
+</blockquote>
+
+<p>
+1. Expand Abbreviation
+</p>
+
+<p>
+  Type abbreviation as 'div&gt;p#foo$*3&gt;a' and type '&lt;c-y&gt;,'.
+  ---------------------
+  <div>
+</p>
+<blockquote>
+&lt;p id="foo1"&gt;
+&lt;a href=""&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;p id="foo2"&gt;
+&lt;a href=""&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;p id="foo3"&gt;
+&lt;a href=""&gt;&lt;/a&gt;
+&lt;/p&gt;
+</blockquote>
+<p>
+  </div>
+  ---------------------
+</p>
+
+<p>
+2. Wrap with Abbreviation
+</p>
+
+<p>
+  Write as below.
+  ---------------------
+  test1
+  test2
+  test3
+  ---------------------
+  Then do visual select(line wize) and type '&lt;c-y&gt;,'.
+  If you request 'Tag:', then type 'ul&gt;li*'.
+  ---------------------
+  &lt;ul&gt;
+</p>
+<blockquote>
+&lt;li&gt;test1&lt;/li&gt;
+&lt;li&gt;test2&lt;/li&gt;
+&lt;li&gt;test3&lt;/li&gt;
+</blockquote>
+<p>
+  &lt;/ul&gt;
+  ---------------------
+</p>
+
+<p>
+  If you type tag as 'blockquote', then you'll see as following.
+  ---------------------
+  &lt;blockquote&gt;
+</p>
+<blockquote>
+test1
+test2
+test3
+</blockquote>
+<p>
+  &lt;/blockquote&gt;
+  ---------------------
+</p>
+
+<p>
+3. Balance Tag Inward
+</p>
+
+<p>
+  type '&lt;c-y&gt;d' in insert mode.
+</p>
+
+<p>
+4. Balance Tag Outward
+</p>
+
+<p>
+  type '&lt;c-y&gt;D' in insert mode.
+</p>
+
+<p>
+5. Go to Next Edit Point
+</p>
+
+<p>
+  type '&lt;c-y&gt;n' in insert mode.
+</p>
+
+<p>
+6. Go to Previous Edit Point
+</p>
+
+<p>
+  type '&lt;c-y&gt;N' in insert mode.
+</p>
+
+<p>
+7. Update &lt;img&gt; Size
+</p>
+
+<p>
+  Move cursor to img tag.
+  ---------------------
+  &lt;img src="foo.png" /&gt;
+  ---------------------
+  Type '&lt;c-y&gt;i' on img tag 
+  ---------------------
+  &lt;img src="foo.png" width="32" height="48" /&gt;
+  ---------------------
+</p>
+
+<p>
+8. Merge Lines
+</p>
+
+<p>
+  select the lines included '&lt;li&gt;'
+  ---------------------
+  &lt;ul&gt;
+</p>
+<blockquote>
+&lt;li class="list1"&gt;&lt;/li&gt;
+&lt;li class="list2"&gt;&lt;/li&gt;
+&lt;li class="list3"&gt;&lt;/li&gt;
+</blockquote>
+<p>
+  &lt;/ul&gt;
+  ---------------------
+  and type '&lt;c-y&gt;m'
+  ---------------------
+  &lt;ul&gt;
+</p>
+<blockquote>
+&lt;li class="list1"&gt;&lt;/li&gt;&lt;li class="list2"&gt;&lt;/li&gt;&lt;li class="list3"&gt;&lt;/li&gt;
+</blockquote>
+<p>
+  &lt;/ul&gt;
+  ---------------------
+</p>
+
+<p>
+9. Remove Tag
+</p>
+
+<p>
+  Move cursor in block
+  ---------------------
+  <div class="foo">
+</p>
+<blockquote>
+&lt;a&gt;cursor is here&lt;/a&gt;
+</blockquote>
+<p>
+  </div>
+  ---------------------
+  Type '&lt;c-y&gt;k' in insert mode.
+  ---------------------
+  <div class="foo">
+</p>
+    
+<p>
+  </div>
+  ---------------------
+</p>
+
+<p>
+  And type '&lt;c-y&gt;k' in there again.
+  ---------------------
+</p>
+
+<p>
+  ---------------------
+</p>
+
+<p>
+10. Split/Join Tag
+</p>
+
+<p>
+  Move cursor in block
+  ---------------------
+  <div class="foo">
+</p>
+<blockquote>
+cursor is here
+</blockquote>
+<p>
+  </div>
+  ---------------------
+  Type '&lt;c-y&gt;j' in insert mode.
+  ---------------------
+  <div class="foo"/>
+  ---------------------
+</p>
+
+<p>
+  And type '&lt;c-y&gt;j' in there again.
+  ---------------------
+  <div class="foo">
+  </div>
+  ---------------------
+</p>
+
+<p>
+11. Toggle Comment
+</p>
+
+<p>
+  Move cursor to block
+  ---------------------
+  <div>
+</p>
+<blockquote>
+hello world
+</blockquote>
+<p>
+  </div>
+  ---------------------
+  Type '&lt;c-y&gt;/' in insert mode.
+  ---------------------
+  &lt;!-- <div>
+</p>
+<blockquote>
+hello world
+</blockquote>
+<p>
+  </div> --&gt;
+  ---------------------
+  Type '&lt;c-y&gt;/' in there again.
+  ---------------------
+  <div>
+</p>
+<blockquote>
+hello world
+</blockquote>
+<p>
+  </div>
+  ---------------------
+</p>
+
+<p>
+12. Make anchor from URL
+</p>
+
+<p>
+  Move cursor to URL
+  ---------------------
+  <a href="http://www.google.com/">http://www.google.com/</a>
+  ---------------------
+  Type '&lt;c-y&gt;a'
+  ---------------------
+  &lt;a href="<a href="http://www.google.com/"&gt;Google&lt;/a&gt;">http://www.google.com/"&gt;Google&lt;/a&gt;</a>
+  ---------------------
+</p>
+
+<p>
+13. Make quoted text from URL
+</p>
+
+<p>
+  Move cursor to URL
+  ---------------------
+  <a href="http://github.com/">http://github.com/</a>
+  ---------------------
+  Type '&lt;c-y&gt;A'
+  ---------------------
+  &lt;blockquote class="quote"&gt;
+</p>
+<blockquote>
+&lt;a href="<a href="http://github.com/"&gt;Secure">http://github.com/"&gt;Secure</a> source code hosting and collaborative development - GitHub&lt;/a&gt;<br />
+&lt;p&gt;How does it work? Get up and running in seconds by forking a project, pushing an existing repository...&lt;/p&gt;
+&lt;cite&gt;<a href="http://github.com/&lt;/cite&gt;">http://github.com/&lt;/cite&gt;</a>
+</blockquote>
+<p>
+  &lt;/blockquote&gt;
+  ---------------------
+</p>
+
+<p>
+14. Installing zencoding.vim for language you using.
+</p>
+
+<ol>
+<li>
+cd ~/.vim
+
+<li>
+unzip zencoding-vim.zip
+
+</ol>
+
+<p>
+  or if you install pathogen.vim:
+</p>
+
+<ol>
+<li>
+cd ~/.vim/bundle # or make directory
+
+<li>
+unzip /path/to/zencoding-vim.zip
+
+</ol>
+
+<p>
+  if you get sources from repository:
+</p>
+
+<ol>
+<li>
+cd ~/.vim/bundle # or make directory
+
+<li>
+git clone <a href="http://github.com/mattn/zencoding-vim.git">http://github.com/mattn/zencoding-vim.git</a>
+
+</ol>
+
+<p>
+15. Enable zencoding.vim for language you using.
+</p>
+
+<p>
+  You can customize the behavior of language you using.
+</p>
+
+<p>
+  ---------------------
+</p>
+<ol>
+<li>
+cat &gt;&gt; ~/.vimrc
+  let g:user_zen_settings = {
+  \  'php' : {
+  \    'extends' : 'html',
+  \    'filters' : 'c',
+  \  },
+  \  'xml' : {
+  \    'extends' : 'html',
+  \  },
+  \  'haml' : {
+  \    'extends' : 'html',
+  \  },
+  \}
+  ---------------------
+
+</ol>
+
+</body>
+</html>

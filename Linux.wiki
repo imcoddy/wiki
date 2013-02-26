@@ -1,1 +1,6 @@
 Ubuntu
+=======
+[[Python]]
+[[Debian]]
+[[Screen]]
+

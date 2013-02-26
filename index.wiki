@@ -1,11 +1,13 @@
-= My Knowledge Base = 
-*  [[Software]]
-*  [[Linux]]
-*  [[Programming]]
-*  [[Note]]
-*  [[TODO]]
+= My Knowledge Base =
 *  [[Device]]
-*  [[Vimwiki]]
-*  [[Reading]]
+*  [[Git]]
+*  [[Linux]]
+*  [[Mac]]
+*  [[Note]]
 *  [[Post]]
-*
+*  [[Programming]]
+*  [[Reading]]
+*  [[Software]]
+*  [[TODO]]
+*  [[Vim]]
+*  [[Vimwiki]]
