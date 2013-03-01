@@ -1,0 +1,13 @@
+# My Knowledge Base
+[[Device]]
+[[Git]]
+[[Linux]]
+[[Mac]]
+[[Note]]
+[[Post]]
+[[Programming]]
+[[Reading]]
+[[Software]]
+[[TODO]]
+[[Vim]]
+[[Vimwiki]]
